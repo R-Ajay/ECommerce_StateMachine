@@ -12,6 +12,7 @@ public abstract class AbstractOrderAction implements Action<OrderState, OrderEve
 	
 	@Override
 	public void execute(StateContext<OrderState, OrderEvent> stateContext) {
+
 		makeServiceCall(stateContext);
 	}
 	
